@@ -108,14 +108,77 @@
             color: #9b9cd9;
         }
 
+        .fund-text {
+            font-size: 2em;
+            text-align: center;
+            margin: 5%;
+        }
+
+        .fund-data {
+            font-size: 2.5em;
+            font-weight: 700;
+            text-align: center;
+            margin: 5%;
+        }
+
+        figcaption {
+            text-align: justify;
+            white-space: normal;
+            width: 100%;
+            font-size: 1.5em
+        }
+
+        .text h1 {
+            font-size: 3em;
+        }
+
+        .text p {
+            font-size: 2em;
+        }
+
+        .larger h1 {
+            font-size: 5em !important;
+        }
+
+        .larger p {
+            font-size: 3em !important;
+            font-weight: 700;
+        }
+
+
         @media only screen and (max-width: 767px) {
             .hd {
                 margin: 0px;
+                font-size: .5em;
             }
 
             .container {
-                margin: 2.5%; 
+                margin: 2.5%;
                 flex-direction: column;
+            }
+
+            .fund-text {
+                font-size: 1.25em !important;
+            }
+
+            .container h1 {
+                font-size: 2em;
+            }
+
+            .container p {
+                font-size: 1em;
+            }
+
+            figcaption {
+                font-size: 0.75em;
+            }
+
+            .larger h1 {
+                font-size: 3em !important;
+            }
+
+            .larger p {
+                font-size:1.5em !important;
             }
         }
     </style>
@@ -132,9 +195,9 @@
     </div>
     <div class="container"
         style="align-items:center; background-image:url('rf-school.jpg'); background-size:cover; padding:0 5%; color: #000000">
-        <div class="text">
-            <h1 style="font-size:5em;">Rebooting Future</h1>
-            <p style="font-size:3em; font-weight:700;">A teenage-led program that aims to change education and poverty
+        <div class="text larger">
+            <h1>Rebooting Future</h1>
+            <p>A teenage-led program that aims to change education and poverty
                 with sustainability with the voice of future generations. As a part of <i>I Share</i>, we are involved
                 in Mangbu, Yunnan, China and beyond...</p>
             <p style="float:right; font-size:1.5em; color:#fff; margin-top:20%">Mangbu Middle School</p>
@@ -142,8 +205,8 @@
     </div>
     <div class="container">
         <div class="text">
-            <h1 style="font-size:5em; align-self: center;">Our Mission</h1>
-            <p style="font-size:3em; font-weight: 700; align-self: center; text-align: center;">Powered by our
+            <h1 class="larger" style="align-self: center;">Our Mission</h1>
+            <p class="larger" style="align-self: center; text-align: center;">Powered by our
                 willingness to impact and care, <br>we use solid actions to motivate others and solve real-world issues.
                 <br>Together, we, as future, build future.
             </p>
@@ -153,13 +216,13 @@
         <div class="image">
             <figue>
                 <img srcset="rf-robotics.jpg" alt="rf-robotics" width="100%">
-                <figcaption style="text-align:justify; white-space:normal; width:100%; font-size:1.5em">Me building a
+                <figcaption>Me building a
                     robot for VEX competition</figcaption>
             </figue>
         </div>
         <div class="text">
-            <h1 style="font-size:3em;">Rebooting Future</h1>
-            <p style="font-size:2em;">After spending two years studying online at the start of the COVID-19 pandemic
+            <h1>Rebooting Future</h1>
+            <p>After spending two years studying online at the start of the COVID-19 pandemic
                 era, I became hugely interested in computer science. Exploring different programming languages,
                 including Python, HTML, and Octave, and robotics, I am eager to connect the knowledge I learned with
                 applications on real-world issues. Finding the need for educational and communicational computers in
@@ -168,26 +231,26 @@
     </div>
     <div class="container">
         <div class="text">
-            <h1 style="font-size:3em;">Fundraising</h1>
+            <h1>Fundraising</h1>
             <div style="display:flex; flex-direction:row;">
                 <div class="fund-container" style="background-color:#42404c; color:#dee3f4">
-                    <p style="font-size:2em; text-align:center; margin:5%;">Total fund</p>
-                    <p style="font-size:2.5em; font-weight:700; text-align:center; margin:5%;">20929.7 CNY</p>
+                    <p class="fund-text">Total fund</p>
+                    <p class="fund-data">20929.7 CNY</p>
                 </div>
                 <div class="fund-container" style="background-color:#dee3f4; color:#42404c">
-                    <p style="font-size:2em; text-align:center; margin:5%;">Donator</p>
-                    <p style="font-size:2.5em; font-weight:700; text-align:center; margin:5%;">258</p>
+                    <p class="fund-text">Donator</p>
+                    <p class="fund-data">258</p>
                 </div>
                 <div class="fund-container" style="background-color:#42404c; color:#dee3f4">
-                    <p style="font-size:2em; text-align:center; margin:5%;">Raised fund</p>
-                    <p style="font-size:2.5em; font-weight:700; text-align:center; margin:5%;">19,380.61 CNY</p>
+                    <p class="fund-text">Raised fund</p>
+                    <p class="fund-data">19,380.61 CNY</p>
                 </div>
                 <div class="fund-container" style="background-color:#dee3f4; color:#42404c">
-                    <p style="font-size:2em; text-align:center; margin:5%;">Matching fund</p>
-                    <p style="font-size:2.5em; font-weight:700; text-align:center; margin:5%;">1,549.09 CNY</p>
+                    <p class="fund-text">Matching fund</p>
+                    <p class="fund-data">1,549.09 CNY</p>
                 </div>
             </div>
-            <p style="font-size:2em;">To further enlarge our impact, we used Tencent platform to raise funds. Along with
+            <p>To further enlarge our impact, we used Tencent platform to raise funds. Along with
                 the Tencent Charity's matching fund of 1549.09 CNY, we raised a total of 20,929.7 CNY. With 258 generous
                 donors, including some of Rectory's classmates, we are able to maintain the program with new regenerated
                 computers and fixing parts. </p>
@@ -195,12 +258,12 @@
         <div class="image" style="flex-direction:row;">
             <figue style="padding-right:2%;">
                 <img srcset="rf-fundraising.jpg" alt="rf-fundraising" width="100%">
-                <figcaption style="text-align:justify; white-space:normal; width:100%; font-size:1.5em">Fundraising for
+                <figcaption>Fundraising for
                     Rebooting Future in the 99 Giving Day by Tencent</figcaption>
             </figue>
             <figue>
                 <img srcset="rf-fund.jpg" alt="rf-fund" width="100%">
-                <figcaption style="text-align:justify; white-space:normal; width:100%; font-size:1.5em">Fund raised for
+                <figcaption>Fund raised for
                     Rebooting Future in the 99 Giving Day by Tencent<br>Translation: Total fund: 20,929.7 CNY
                 </figcaption>
             </figue>
